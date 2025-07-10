@@ -1,6 +1,32 @@
 [project]
 name = "job-bounty-board"
-clarity_version = "2.1.0"
+description = "A decentralized job bounty board with escrow, reputation system, and dispute resolution"
+version = "2.0.0"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+keywords = ["stacks", "clarity", "bounty", "jobs", "defi"]
 
 [contracts.job-bounty-board]
 path = "contracts/job-bounty-board.clar"
+
+[contracts.reputation-system]
+path = "contracts/reputation-system.clar"
+
+[devnet]
+disable_stacks_explorer = false
+disable_stacks_api = false
+
+[[devnet.accounts]]
+name = "deployer"
+mnemonic = "twice kind fence tip hidden tilt action fragile skin nothing glory cousin green tomorrow spring wrist shed math olympic multiply hip blue scout claw"
+balance = 100000000000000
+
+[[devnet.accounts]]
+name = "wallet_1"
+mnemonic = "sell invite acquire kitten bamboo drastic jelly vivid peace spawn twice guilt pave pen trash pretty park cube fragile unaware remain midnight betray rebuild"
+balance = 100000000000000
+
+[[devnet.accounts]]
+name = "wallet_2"
+mnemonic = "hold excess usual excess ring elephant install account glad dry fragile donkey gaze humble truck breeze nation gasp vacuum limb head keep delay hospital"
+balance = 100000000000000
