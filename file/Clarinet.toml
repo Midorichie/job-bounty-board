@@ -1,0 +1,6 @@
+[project]
+name = "job-bounty-board"
+clarity_version = "2.1.0"
+
+[contracts.job-bounty-board]
+path = "contracts/job-bounty-board.clar"
